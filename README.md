@@ -46,6 +46,6 @@ and push these to the remote repository
 
 `git push origin <branchname>`
 
-Once you are happy with your solution, [open a pull request](https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request)
+Once you are happy with your solution, [open a pull request](https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request) - make sure to set the base repository to your fork repository.
 
 Then wait!
