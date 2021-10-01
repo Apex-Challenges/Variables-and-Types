@@ -129,19 +129,17 @@ public with sharing class Homework {
     {
         // Find the position of the substring “Apex” in candidate. what you need to do is create a method
         // who calls this method needs to pass a string as a parameter. (i need help with this)
-        
-        String myString1 = 'candidate';
         String myString2 = 'Apex';
-        Integer result = myString1.indexOf(mystring2);
-        System.assertEquals(2, result);
+        Integer result = candidate.indexOf(mystring2);
+        
     }
 
     public void get10And15(String candidate)
     {
         // Extract the 10th and 15th characters from a string (i need help with this)
         
-        'uncopyrighttable'.substring(10);
-        'uncopyrighttable'.substring(15);
+        string num1 = 'uncopyrighttable'.substring(9,10);
+        string num2 = 'uncopyrighttable'.substring(14,15);
 
     }
 
@@ -154,16 +152,13 @@ public with sharing class Homework {
         
         
         Date endDate = Date.newInstance(2024, 12, 25);
-        Date startDate = Date.newInstance(2024, 4, 8);
+        Date newstartDate = Date.newInstance(2024, 4, 8);
         Integer monthsBetween = endDate.monthsBetween(startDate);
         System.assertEquals(8, monthsBetween);
 
         
 // Create Datetime on May 28, 2013 at 1:06:08 AM in the local timezone.
 Datetime localtimezone = Datetime.newInstance(2013, 5, 28, 1, 06, 08);
-
-// Find whether the time is within the default business hours (i need help with this)
-Boolean isWithin= numberofmonths.isWithin(bh.id, endDate);
 
     }
 }
