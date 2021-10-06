@@ -18,10 +18,12 @@ public with sharing class Homework {
         // Create a variable representing the time 12:30:25 in the local 
         // timezone and use this time to create a DateTime for the date 
         // 12/31/2021
-        
-        datetime myDate = datetime.newInstance(2021, 12, 31, 12, 30, 25);
-        DateTime now=System.now(); // or system.debug(myDate);
 
+        Date myDate = Date.newInstance(2012, 12, 31);
+        Time myTime = Time.newInstance(12, 30, 25, 0);
+        DateTime dt = DateTime.newInstance(myDate, myTime);
+        DateTime expected = DateTime.newInstance(2012, 12, 31, 12, 30, 25);
+        System.assertEquals(expected, dt);
     }
 
     public void castAccount()
@@ -29,9 +31,8 @@ public with sharing class Homework {
         // Create an sobject variable initialised to a new Account. 
         // Create an account variable that is initialised by casting the 
         // sobject variable.
-        Account acc=new Account(Name ='Witham');
-        sObject generic=acc;
-
+        sObject account = new Account(Name ='Witham'); 
+        Account learncode = (Account)account;
     }    
 
     public void createBlob()
@@ -75,7 +76,7 @@ public with sharing class Homework {
         // whitespace at the start and end removed.
         
         string company = '     BrightGen Limited   ';
-        string secondcompany = company.deleteWhitespace();
+        String trimmed = company.trim();
         //System.assertEquals(secondcompany, company.deleteWhitespace());
 
     }
